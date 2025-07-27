@@ -48,7 +48,7 @@ ai-resume-generator/
 │   │   ├── elegant.ico
 │   │   ├── creative.ico
 │   │   └── minimal.ico
-│   ├── js/                       # Optional client-side scripts
+│   ├── js/                       
 │   │   └── preview.js
 ├── views/                        # EJS templates for rendering pages
 │   ├── index.ejs                 # Homepage: input form and theme selection
@@ -57,12 +57,6 @@ ai-resume-generator/
 │   ├── elegant.ejs               # Resume template - Elegant
 │   ├── creative.ejs              # Resume template - Creative
 │   └── minimal.ejs               # Resume template - Minimal
-├── utils/                        # Optional helper modules
-│   └── renderEJS.js              # Renders EJS to HTML for Puppeteer
-├── controllers/                  # Optional route handlers (if modularized)
-│   └── resumeController.js
-├── logs/                         # Optional directory for logging output
-│   └── resume.log
 ├── README.md                     # Full project documentation
 ├── node_modules/                 # Installed npm packages
 └── .gitignore                    # Ignore node_modules, .env, etc.
