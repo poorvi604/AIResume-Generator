@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Generated Resume</h2>
+    <p><strong>Name:</strong> <%= name %></p>
+    <p><strong>Skills:</strong> <%= skills %></p>
+    <p><strong>Job Role:</strong> <%= role %></p>
+    <p><strong>Experience:</strong> <%= experience %></p>
+    <p><strong>AI Suggestion:</strong> <%= suggestedBullet %></p>
+
+    <form action="/send-email" method="POST">
+      <input type="email" name="email" placeholder="Email to send resume" required>
+      <input type="hidden" name="name" value="<%= name %>">
+      <input type="hidden" name="skills" value="<%= skills %>">
+      <input type="hidden" name="jobRole" value="<%= role %>">
+      <input type="hidden" name="experience" value="<%= experience %>">
+      <input type="hidden" name="template" value="<%= template %>">
+      <button type="submit">Send PDF via Email</button>
+    </form>
+  </div>
+</body>
+</html>
