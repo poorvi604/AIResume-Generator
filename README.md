@@ -115,5 +115,5 @@ GEMINI_API_KEY=your_key_here
 🛡️ Pro Tip for Distribution
 If the project is shared with others (especially less technical users):
 - After cloning: npm install
-If PDF fails to generate: run npx puppeteer install
-If at the terminal Gemini Generation error occurs: npm install @google/generative-ai@latest
+  --If PDF fails to generate: run npx puppeteer install
+  --If at the terminal Gemini Generation error occurs: npm install @google/generative-ai@latest
